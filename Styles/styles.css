@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+/* shared styles */
+.display-flex{
+  display: flex;
+}
+/* orange */
+.text-orange{
+  color: orange;
+}
+
+
+/* Sky blue */
+.text-Skyblue{
+  color: skyblue;
+}
+
+/* 05D4DF */
+ .text-05D4DF{
+  color: rgba(5, 212, 223, 1);
+ }
+
+/* 5D58EF */
+.text-5D58EF{
+    color: rgba(93, 88, 239, 1);
+}
+
+/* header styles */
+
+
+/* navbar related styles */
+.navbar{
+ justify-content: space-between;
+ padding: 20px;
+}
+/*
+.logo img{
+  width: 52px;
+  height: 62;
+} */
+
+.logo{
+  display: flex;
+  text-align: center;
+  font-size: 32px;
+  width: 200px;
+  height: 62px;
+  align-items: center;
+}
+/*
+.SCHOOL{
+  font-size: 32px;
+  text-align: right;
+}  */
+.nav-iteam{
+ list-style: none;
+ margin-right: 30px;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar{
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+/* btn-styles */
+.btn-primary{
+  background-color: orange;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  width: 200px ;
+  height: 50px;
+  border: none;
+
+
+}
+
