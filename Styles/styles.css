@@ -39,8 +39,10 @@
 
 
 /* navbar related styles */
-.navbar{
+.navbar,.banner{
  justify-content: space-between;
+ max-width: 1160px;
+ margin: 0 auto;
  padding: 20px;
 }
 /*
@@ -52,7 +54,8 @@
 .logo{
   display: flex;
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 700;
   width: 200px;
   height: 62px;
   align-items: center;
@@ -72,21 +75,62 @@
   font-weight: 500;
   font-size: 20px;
 }
-
+/*
 .navbar{
   max-width: 1440px;
   margin: 0 auto;
+} */
 
-}
 /* btn-styles */
-.btn-primary{
+.btn-contact{
   background-color: orange;
   color: rgba(255, 255, 255, 1);
   border-radius: 12px;
   width: 200px ;
   height: 50px;
   border: none;
+}
 
+ /* banner styles */
+ 
+ .banner{
+  display: flex;
+  align-items: center;
+  height: 1158px;
+  height: 575px;
+  
+}
+.banner-content{
+  max-width: 600px;
+}
+
+.banner-title{
+  font-size: 56px;
+  font-weight: bold;
 
 }
 
+.banner-description{
+  font-size: 1.3rem ;
+}
+.btn-primary{
+  background-color: black;
+  color: rgba(255, 255, 255, 1);
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 24px;
+}
+/*
+.banner-img{
+  width: 468px ;
+  height: 575px;
+} */
+/*  responsive media quarry */
+@media screen and (max-width: 580px) {
+   .banner, .navbar,.nav-links {
+    flex-direction: column;
+  
+   }
+  }
