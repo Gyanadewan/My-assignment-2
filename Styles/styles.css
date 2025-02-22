@@ -42,13 +42,13 @@
  padding: 20px;
 }
 
+
 /* menu-btn style */
-.fa-bars{
-  display: none;
-  color: black;
-}
 
 .hide{
+  display: none;
+}
+.display-none{
   display: none;
 }
 
@@ -204,11 +204,15 @@
   background-color: rgba(255, 255, 255, 1);
 } 
 
-.story-1,.story-2,.story-3,.story-4,.story-5,img{
+.story-2,.story-3,.story-4,.story-5,img{
   border-radius: 16px 16px 0px 0px;
-
 }
 
+.title-name{
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-top: 60px;
+}
 .story-description{
   color: rgba(102, 102, 102, 1);
   padding-left: 38px;
@@ -228,7 +232,6 @@
   grid-template-columns: repeat(2,1fr);
   width: 600px;
   height: 622px;
-
 }
 
 .date {
@@ -249,7 +252,6 @@
   position: relative;
   right: 80px;
   top: 80px ;
-   
   color: rgba(255, 255, 255, 1);
   background-color: black;
   border-radius: 12px;
@@ -269,8 +271,8 @@
   background-color: rgba(1, 172, 253, 1);
   color: white ;
   margin-top: 150px;
+  width: 100%;
   height: 519px;
- 
  }
 
 .footer-content{
@@ -294,94 +296,93 @@
   color: rgba(255, 255, 255, 1);
 }
 
-
-/*
-.FFFFFF{
-  color: rgba(255, 255, 255, 1);
-  font-size: 20px;
-}  */
-
+.footer-kids{
+  position: relative;
+  top: -10px;
+}
 .footer-links li{
    list-style: none ;
    margin-bottom: 20px;
 }
 
-/*media query  styles*/
+.footer-icon{
+  position: relative;
+  top: -50px;
+}
 
-@media screen and (max-width: 768px) {
-  /* Navbar styles for mobile */
-  .navbar {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      position: relative;
-  }
 
- .fa-bars {
+
+
+
+
+/*media query responsive*/
+
+@media screen and (max-width: 576px) {
+  /* Navbar styles */
+
+ .hide {
       display: block;
-      font-size: 24px;
       cursor: pointer;
       position: absolute;
       right: 20px;
       top: 20px;
   }
-.SCHOOL {
+.SCHOOL,
+.btn-contact,
+.nav-item,
+.btn-contact,
+.btn-container, 
+.container-1 {
   display: none;
-}
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background: white;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
+} 
 
-  .nav-links.active {
-      display: flex;
-  }
 
-  .nav-item {
-      margin: 10px 0;
-  }
-
-  .btn-contact {
-      display: none; /* Hide for mobile */
-  }
-
-  /* Banner section responsive */
+  /* Banner styles */
   .banner {
-      flex-direction: column;
+     flex-direction: column-reverse;
       text-align: center;
       width: 100%;
       height: auto;
       padding: 20px;
   }
 
-  .banner-content {
-      max-width: 100%;
-      padding: 0 20px;
-  }
-
-  .banner-title {
-      font-size: 36px;
-  }
-
-  .banner-description {
-      font-size: 1.1rem;
-  }
-
-  .btn-primary {
-      width: 100%;
-      max-width: 200px;
-  }
-
-  .banner-img img {
-      width: 80%;
-      max-width: 300px;
-  }
+ /*curriculum */
+  .curriculum, .card-content{
+     display: grid;
+     grid-template-columns: repeat(1,3fr);
+     width: 357px;
+     height: 991px;
+     align-items: center;
+     gap: 12px;
+     padding: 20px;
 }
 
- 
+
+  /* story content styles */
+
+.title-name{
+
+
+}
+.container-2{
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  gap: 20px;
+  margin-top: 200px;
+  text-align: center;
+}
+.display-none{
+  display: block;
+}
+
+.btn-view  {
+  flex-direction: column;
+  left: 100px;
+  top: 10px;
+  gap: 20px;
+}
+
+.footer-content{
+  flex-direction: column;
+}
+}
